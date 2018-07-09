@@ -48,10 +48,38 @@ class APIView extends Component {
             <Text
               style={ViewStyles.viewItem}
               onPress={() => {
+                Actions.picker()
+              }}
+            >
+              Picker(选择器)
+            </Text>
+          </View>
+          <View style={ViewStyles.viewBox}>
+            <Text
+              style={ViewStyles.viewItem}
+              onPress={() => {
                 Actions.modal()
               }}
             >
               Modal(弹出框)
+            </Text>
+            <Text
+              style={ViewStyles.viewItem}
+              onPress={() => {
+                Actions.datePicker()
+              }}
+            >
+              DatePicker(时间选择器)
+            </Text>
+          </View>
+          <View style={ViewStyles.viewBox}>
+            <Text
+              style={ViewStyles.viewItem}
+              onPress={() => {
+                Actions.table()
+              }}
+            >
+              Table(表格控件)
             </Text>
           </View>
         </View>

@@ -3,7 +3,12 @@ import Button from './Button'
 import Alert from './Alert'
 import Loading from './Loading'
 import FlatList from './FlatList'
+import Picker from './Picker'
+import CameraRoll from './CameraRoll'
+import TabBar from './TabBar'
 import Modal from './Modal'
+import DatePicker from './DatePicker'
+import Table from './Table'
 
 export default [
   {
@@ -32,8 +37,33 @@ export default [
     component: FlatList
   },
   {
+    key: 'picker',
+    title: '选择器',
+    component: Picker
+  },
+  {
+    key: 'cameraRoll',
+    title: '相册控制',
+    component: CameraRoll
+  },
+  {
+    key: 'tabBar',
+    title: '选项卡',
+    component: TabBar
+  },
+  {
     key: 'modal',
     title: '弹出框',
     component: Modal
+  },
+  {
+    key: 'datePicker',
+    title: '时间控件',
+    component: DatePicker
+  },
+  {
+    key: 'table',
+    title: '表格控件',
+    component: Table
   }
 ]
