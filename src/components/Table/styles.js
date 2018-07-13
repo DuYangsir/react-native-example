@@ -10,14 +10,31 @@ export default {
     borderBottomColor: '#ebebeb'
   },
   thItem: {
-    paddingTop: 5,
+    paddingTop: 10,
     paddingBottom: 10,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
+    flexDirection: 'row'
   },
   thText: {
     fontSize: 12,
     color: '#909399'
+  },
+  thSort: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingLeft: 10,
+    paddingTop: 2
+  },
+  sortAsc: {
+    position: 'absolute',
+    left: 0,
+    top: 0
+  },
+  sortDesc: {
+    position: 'absolute',
+    left: 0,
+    top: 0
   },
   tbody: {
     flex: 1

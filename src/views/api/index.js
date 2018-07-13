@@ -53,6 +53,14 @@ class APIView extends Component {
             >
               Picker(选择器)
             </Text>
+            <Text
+              style={ViewStyles.viewItem}
+              onPress={() => {
+                Actions.cameraRoll()
+              }}
+            >
+              cameraRoll(相机)
+            </Text>
           </View>
           <View style={ViewStyles.viewBox}>
             <Text
@@ -80,6 +88,14 @@ class APIView extends Component {
               }}
             >
               Table(表格控件)
+            </Text>
+            <Text
+              style={ViewStyles.viewItem}
+              onPress={() => {
+                Actions.tableFix()
+              }}
+            >
+              Table-Fix(表格控件)
             </Text>
           </View>
         </View>
